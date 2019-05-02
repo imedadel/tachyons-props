@@ -1,10 +1,12 @@
+<img align="center" src="./tachyonsProps.svg" alt="tachyons-props">
+
 # tachyons-props
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe tachyons-props here.
+Use tachyons' classes as styled-components props.
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
