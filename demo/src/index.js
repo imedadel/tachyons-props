@@ -1,15 +1,15 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from "react";
+import { render } from "react-dom";
+// import styled from "styled-components"
+import Div, {GlobalStyle} from "../../src";
 
-import Example from '../../src'
+const Demo = () => (
+  <Div>
+    <GlobalStyle />
+    <Div bBlack as="h2">
+    Hello and welcome.
+    </Div>
+  </Div>
+);
 
-class Demo extends Component {
-  render() {
-    return <div>
-      <h1>tachyons-props Demo</h1>
-      <Example/>
-    </div>
-  }
-}
-
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector("#demo"));
