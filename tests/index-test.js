@@ -6,7 +6,7 @@ import Div, {GlobalStyle} from "src/";
 
 describe("Div", () => {
   it('renders a div with black borders', () => {
-    expect(render(<Div><GlobalStyle/>Test</Div>)).toContain(
+    expect(render(<Div bSolidL><GlobalStyle/>Test</Div>)).toContain(
       'Test</div>'
     );
   });
