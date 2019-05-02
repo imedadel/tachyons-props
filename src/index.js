@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import styled from "styled-components"
+import React, { Component } from "react";
+import styled from "styled-components";
+import { tachyons, GlobalStyle } from "./tachyons/tachyons";
+// import {colors} from "./tachyons/colors";
 
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export { GlobalStyle };
+// export const GlobalStyle = createGlobalStyle`${colors}`
+export default styled.div`
+  ${tachyons}
+`;
