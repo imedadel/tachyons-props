@@ -6,7 +6,7 @@ import Div, {GlobalStyle} from "../../src";
 const Demo = () => (
   <Div>
     <GlobalStyle />
-    <Div bBlack as="h2">
+    <Div bw1 bSolid bSolidL bDottedM bDashedNS bBlack as="h2">
     Hello and welcome.
     </Div>
   </Div>
