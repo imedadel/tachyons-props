@@ -1,23 +1,13 @@
 import expect from 'expect'
 import React from 'react'
-import {render, unmountComponentAtNode} from 'react-dom'
+import { renderToStaticMarkup as render } from "react-dom/server";
 
-import Component from 'src/'
+import Div, {GlobalStyle} from "src/";
 
-describe('Component', () => {
-  let node
-
-  beforeEach(() => {
-    node = document.createElement('div')
-  })
-
-  afterEach(() => {
-    unmountComponentAtNode(node)
-  })
-
-  it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
-    })
-  })
-})
+describe("Div", () => {
+  it('renders a div with black borders', () => {
+    expect(render(<Div><GlobalStyle/>Test</Div>)).toContain(
+      'Test</div>'
+    );
+  });
+});
