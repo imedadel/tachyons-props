@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 import { mediaQueries } from "./media-queries";
 
-export const borderStyle = p => css`
+export const borderWidths = p => css`
 ${p.bw0 &&
   css`
     border-width: 0;
